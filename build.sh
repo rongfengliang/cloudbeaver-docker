@@ -37,6 +37,8 @@ cp -p ./scripts/run-server.sh ./cloudbeaver
 mkdir ./cloudbeaver/workspace/GlobalConfiguration
 cp -rp ../samples/sample-databases/GlobalConfiguration cloudbeaver/workspace
 cp ../samples/sample-databases/cloudbeaver.conf cloudbeaver/conf/cloudbeaver.conf
+cp ../samples/sample-databases/initial-data.conf cloudbeaver/conf/initial-data.conf
+cp ../samples/sample-databases/product.conf cloudbeaver/conf/product.conf
 
 echo "Build static content"
 
