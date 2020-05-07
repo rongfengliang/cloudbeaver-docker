@@ -13,12 +13,13 @@ echo "Pull dbeaver platform"
 cd ../..
 if [[ ! -f dbeaver ]]
 then
-    git clone --depth 1 https://github.com/dbeaver/dbeaver.git
+  git clone --depth 1 https://github.com/dbeaver/dbeaver.git
 fi
 echo $PWD
 ls -sailh
-cd dbeaver
 
+cd dbeaver
+git pull
 mvn clean package install
 
 cd ../cloudbeaver/deploy
